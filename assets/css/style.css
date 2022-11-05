@@ -3760,6 +3760,10 @@ label {
   color: white;
 }
 
+.single-slide .thumb img{
+  height: 300px;
+}
+
 @media(max-width:1300px){
   .faq_img img {
     width: 500px;
@@ -3849,5 +3853,7 @@ label {
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
+
+
 
 }
