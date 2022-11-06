@@ -32,10 +32,7 @@ body {
   overflow-x: hidden;
 }
 
-section,
-footer {
-  overflow-x: hidden;
-}
+
 
 h1,
 h2,
@@ -1053,9 +1050,6 @@ label {
   background-position: right bottom;
 }
 
-.banner-section.invoice-management .overlay .banner-content {
-  padding: 395px 0 300px;
-}
 
 .banner-section.invoice-management .overlay .cmn-btn:hover {
   color: var(--bs-white);
@@ -1210,12 +1204,9 @@ label {
 }
 
 .banner-section.about-us .overlay .banner-content {
-  padding: 208px 0 365px;
+  padding: 150px 0 200px;
 }
 
-.banner-section.about-us .banner-img-bottom {
-  margin-top: -345px;
-}
 
 .banner-section.about-us .magnific-area {
   border-radius: 30px;
@@ -1233,6 +1224,7 @@ label {
   width: 120px;
   height: 120px;
   background: var(--bs-white);
+  margin-top: 250px;
 }
 
 .banner-section.about-us .magnific-area .mfp-iframe::before {
@@ -1257,7 +1249,7 @@ label {
 
 .banner-section.about-us .stars-info .single-box .icon-box {
   border-radius: 50%;
-  background-color: var(--primary-color);
+  background-color: #4743c9;
   width: 120px;
   height: 120px;
   margin: auto;
@@ -1325,16 +1317,6 @@ label {
   position: relative;
 }
 
-.footer-section::before {
-  content: "";
-  position: absolute;
-  background-color: #0a2843;
-  width: 100%;
-  height: 60%;
-  z-index: -1;
-  left: 0;
-  bottom: 0;
-}
 
 .footer-section .newsletter {
   border-radius: 20px;
@@ -3169,9 +3151,7 @@ label {
   .banner-section .overlay .banner-content .send-money {
     margin-top: 40px;
   }
-  .banner-section.about-us .banner-img-bottom {
-    margin-top: -180px;
-  }
+
   .banner-section.about-us .magnific-area .mfp-iframe {
     width: 90px;
     height: 90px;
@@ -3404,10 +3384,10 @@ label {
     margin: auto;
   }
   .banner-section.about-us .stars-info {
-    margin-bottom: -30px;
+    padding-bottom: 60px;
   }
   .banner-section.about-us .stars-info .single-box {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .our-team .cus-mar {
     text-align: center;
@@ -3764,6 +3744,62 @@ label {
   height: 300px;
 }
 
+.about-section {
+  background-image: url(../images/circle.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.about-section .count-content {
+  padding: 30px 45px;
+  background: var(--body-color);
+  box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
+  border-radius: 10px;
+}
+
+.about-section .count-content .count-number {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.about-section .img-area {
+  position: relative;
+}
+
+.about-section .img-area img {
+  position: absolute;
+  border: 6px solid var(--body-color);
+  border-radius: 10px;
+}
+
+.about-section .img-area .img-1 {
+  left: 50px;
+  bottom: 0;
+  height: 350px;
+}
+
+.about-section .img-area .img-2 {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 250px;
+}
+
+.about-section .img-area .img-3 {
+  top: -150px;
+  right: -75px;
+  height: 250px;
+}
+
+.pt-90{
+  padding-top: 90px;
+}
+
+.pb-90{
+  padding-bottom: 90px;
+}
+
 @media(max-width:1300px){
   .faq_img img {
     width: 500px;
@@ -3854,6 +3890,25 @@ label {
   grid-template-columns: repeat(3,1fr);
 }
 
+.about-section {
+  background: unset;
+}
 
+.about-section .img-area img {
+  position: initial;
+  height: 100% !important;
+}
+
+.banner-section.about-us .stars-info .col-sm-3:last-child .single-box {
+  margin-bottom: 0;
+}
+
+.our-values .col-lg-6{
+  margin-top: 0;
+}
+
+.our-values .section-header{
+  margin-bottom: 80px;
+}
 
 }
